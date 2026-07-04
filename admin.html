@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kudos Admin — Datacom</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1>🛡️ Kudos Admin</h1>
+      <nav class="nav">
+        <span id="welcomeMsg"></span>
+        <a href="index.html">Dashboard</a>
+        <button id="logoutBtn" class="btn-link">Log out</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p id="accessDenied" class="error hidden">You do not have permission to view this page.</p>
+
+    <section id="adminView" class="hidden">
+      <div class="card">
+        <h2>Open Reports</h2>
+        <div id="reportsTable"></div>
+        <p id="reportsEmpty" class="hint hidden">No open reports.</p>
+      </div>
+
+      <div class="card">
+        <h2>Moderation — All Kudos</h2>
+        <div id="moderationTable"></div>
+        <button id="loadMoreAdminBtn" class="btn-secondary hidden">Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
