@@ -1,4 +1,4 @@
-# Kudos System — Datacom Internal Portal
+# Kudos System: Datacom Internal Portal
 
 A peer-recognition ("kudos") feature for the internal employee portal, built
 using a spec-driven development process. See [`SPECIFICATION.md`](./SPECIFICATION.md)
